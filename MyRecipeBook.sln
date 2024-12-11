@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+=======
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B15D13BB-038A-4FD8-B189-11D2EB2E1FBF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{20F8C63B-8A7E-459C-978B-43ACBCBBF793}"
@@ -67,6 +73,7 @@ Global
 		{8FF37438-210D-495D-B45E-77A22D7E14A7} = {701C7A94-B21D-42F0-B1A0-21430C232A9E}
 		{0CFD0686-A456-4BF9-951D-A7F99ACE860D} = {701C7A94-B21D-42F0-B1A0-21430C232A9E}
 	EndGlobalSection
+>>>>>>> 3277517ed799c0760a2a7d614e15c48409fb36da
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0AD6D6F3-922E-4D8B-93FC-BE79043AFE08}
 	EndGlobalSection
