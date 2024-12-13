@@ -1,0 +1,12 @@
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\bin\Debug\net8.0\MyRecipeBook.Domain.deps.json
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\bin\Debug\net8.0\MyRecipeBook.Domain.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\bin\Debug\net8.0\MyRecipeBook.Domain.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.AssemblyInfoInputs.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.AssemblyInfo.cs
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\refint\MyRecipeBook.Domain.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\ref\MyRecipeBook.Domain.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Domain\obj\Debug\net8.0\MyRecipeBook.Domain.sourcelink.json

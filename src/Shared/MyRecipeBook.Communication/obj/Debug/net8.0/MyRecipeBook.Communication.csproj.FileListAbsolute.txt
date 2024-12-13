@@ -1,0 +1,12 @@
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\bin\Debug\net8.0\MyRecipeBook.Communication.deps.json
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\bin\Debug\net8.0\MyRecipeBook.Communication.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\bin\Debug\net8.0\MyRecipeBook.Communication.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.AssemblyInfoInputs.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.AssemblyInfo.cs
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.csproj.CoreCompileInputs.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\refint\MyRecipeBook.Communication.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\ref\MyRecipeBook.Communication.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Shared\MyRecipeBook.Communication\obj\Debug\net8.0\MyRecipeBook.Communication.sourcelink.json

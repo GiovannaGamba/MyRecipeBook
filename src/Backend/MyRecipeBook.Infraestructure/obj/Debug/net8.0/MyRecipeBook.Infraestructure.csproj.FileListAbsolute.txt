@@ -1,0 +1,16 @@
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\bin\Debug\net8.0\MyRecipeBook.Infraestructure.deps.json
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\bin\Debug\net8.0\MyRecipeBook.Infraestructure.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\bin\Debug\net8.0\MyRecipeBook.Infraestructure.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\bin\Debug\net8.0\MyRecipeBook.Domain.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\bin\Debug\net8.0\MyRecipeBook.Domain.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.csproj.AssemblyReference.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.AssemblyInfo.cs
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.sourcelink.json
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipe.F0ABA2D7.Up2Date
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\refint\MyRecipeBook.Infraestructure.dll
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\MyRecipeBook.Infraestructure.pdb
+C:\Users\ggamba\OneDrive - AGP GROUP\projetos\Giovanna\Meu Livro de Receitas\src\Backend\MyRecipeBook.Infraestructure\obj\Debug\net8.0\ref\MyRecipeBook.Infraestructure.dll
