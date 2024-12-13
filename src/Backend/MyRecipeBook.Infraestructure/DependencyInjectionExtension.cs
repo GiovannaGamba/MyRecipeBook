@@ -5,7 +5,6 @@ using MyRecipeBook.Domain.Repositories;
 using MyRecipeBook.Domain.Repositories.User;
 using MyRecipeBook.Infraestructure.DataAccess;
 using MyRecipeBook.Infraestructure.DataAccess.Repositories;
-using MyRecipeBook.Infraestructure.Extensions;
 
 
 namespace MyRecipeBook.Infraestructure
@@ -32,7 +31,7 @@ namespace MyRecipeBook.Infraestructure
         private static void AddRepositories(IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
+
             services.AddScoped<IUserWriteOnlyRepository, UserRepository>();
             services.AddScoped<IUserReadOnlyRepository, UserRepository>();
         }

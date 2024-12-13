@@ -6,12 +6,12 @@ namespace MyRecipeBook.API.Middleware
     {
         private readonly RequestDelegate _next;
 
-        public CultureMiddleware(RequestDelegate next) 
+        public CultureMiddleware(RequestDelegate next)
         {
             _next = next;
         }
 
-        
+
         public async Task Invoke(HttpContext context)
         {
             var supportedLanguages = CultureInfo.GetCultures(CultureTypes.AllCultures);
@@ -20,13 +20,11 @@ namespace MyRecipeBook.API.Middleware
 
             var cultureInfo = new CultureInfo("en");
 
-            if (string.IsNullOrWhiteSpace(requestedCulture) == false 
+            if (string.IsNullOrWhiteSpace(requestedCulture) == false
                 && supportedLanguages.Any(c => c.Name.Equals(requestedCulture)))
             {
                 cultureInfo = new CultureInfo(requestedCulture);
             }
-
-
 
             CultureInfo.CurrentCulture = cultureInfo;
             CultureInfo.CurrentUICulture = cultureInfo;

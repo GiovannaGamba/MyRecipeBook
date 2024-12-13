@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using MyRecipeBook.Application.Services.AutoMapper;
 using MyRecipeBook.Application.Services.Cryptography;
 using MyRecipeBook.Communication.Requests;
 using MyRecipeBook.Communication.Responses;
@@ -19,7 +18,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
         private readonly PasswordEncripter _passwordEncripter;
 
         public RegisterUserUseCase(
-            IUserWriteOnlyRepository writeOnlyRepository, 
+            IUserWriteOnlyRepository writeOnlyRepository,
             IUserReadOnlyRepository readOnlyRepository,
             IUnitOfWork unitOfWork,
             IMapper mapper,
@@ -35,7 +34,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
 
         public async Task<ResponseRegisteredUserJson> Execute(RequestRegisterUserJson request)
         {
-            await Validate(request);           
+            await Validate(request);
 
             var user = _mapper.Map<Domain.Entities.User>(request);
 
