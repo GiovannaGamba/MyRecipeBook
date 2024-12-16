@@ -25,8 +25,6 @@ namespace MyRecipeBook.API.Middleware
                 cultureInfo = new CultureInfo(requestedCulture);
             }
 
-
-
             CultureInfo.CurrentCulture = cultureInfo;
             CultureInfo.CurrentUICulture = cultureInfo;
 

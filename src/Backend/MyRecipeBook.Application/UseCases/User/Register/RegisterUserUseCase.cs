@@ -53,7 +53,6 @@ namespace MyRecipeBook.Application.UseCases.User.Register
 
                 throw new ErrorOnValidationException(errorMessages);
             }
-
         }
     }
 }
