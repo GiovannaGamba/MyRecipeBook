@@ -12,7 +12,7 @@ namespace MyRecipeBook.Application.Services.Cryptography
             var newPassword = $"{password}{chaveAdicional}";
 
             var bytes = Encoding.UTF8.GetBytes(newPassword);
-            var hashBytes =  SHA512.HashData(bytes);
+            var hashBytes = SHA512.HashData(bytes);
 
             return StringBytes(hashBytes);
         }

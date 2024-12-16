@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using MyRecipeBook.Application.Services.AutoMapper;
 using MyRecipeBook.Application.Services.Cryptography;
 using MyRecipeBook.Communication.Requests;
 using MyRecipeBook.Communication.Responses;
@@ -13,9 +12,9 @@ namespace MyRecipeBook.Application.UseCases.User.Register
         private readonly IUserWriteOnlyRepository _writeOnlyRepository;
         private readonly IUserReadOnlyRepository _readOnlyRepository;
         private readonly IMapper _mapper;
-        
+
         public RegisterUserUseCase(
-            IUserWriteOnlyRepository writeOnlyRepository, 
+            IUserWriteOnlyRepository writeOnlyRepository,
             IUserReadOnlyRepository readOnlyRepository,
             IMapper mapper)
         {
@@ -28,7 +27,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
         {
             var criptografiaDeSenha = new PasswordEncripter();
 
-            Validate(request);           
+            Validate(request);
 
             var user = _mapper.Map<Domain.Entities.User>(request);
 
