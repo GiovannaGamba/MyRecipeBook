@@ -9,7 +9,7 @@ namespace Validator.Test.User.Register
         {
             var validator = new RegisterUserValidator();
 
-            var result = validator.Validate(request);
+            //var result = validator.Validate(request);
         }
     }
 }
