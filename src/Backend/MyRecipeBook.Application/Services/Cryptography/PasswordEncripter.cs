@@ -5,7 +5,7 @@ namespace MyRecipeBook.Application.Services.Cryptography
 {
     public class PasswordEncripter
     {
-        private readonly string _additionalKey;  
+        private readonly string _additionalKey;
         public PasswordEncripter(string additionalKey) => _additionalKey = additionalKey;
         public string Encrypt(string password)
         {

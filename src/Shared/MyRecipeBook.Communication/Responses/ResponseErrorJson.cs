@@ -6,7 +6,7 @@
 
         public ResponseErrorJson(IList<string> errors) => Errors = errors;
 
-        public ResponseErrorJson(string error) 
+        public ResponseErrorJson(string error)
         {
             Errors = new List<string>
             {
