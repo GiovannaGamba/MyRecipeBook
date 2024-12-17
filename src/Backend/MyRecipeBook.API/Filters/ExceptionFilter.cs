@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using MyRecipeBook.Communication.Responses;
 using MyRecipeBook.Exceptions;
 using MyRecipeBook.Exceptions.ExceptionsBase;
+using System;
 using System.Net;
 
 namespace MyRecipeBook.API.Filters
@@ -15,7 +16,7 @@ namespace MyRecipeBook.API.Filters
             {
                 HandleProjectException(context);
             }
-            else
+            else 
             {
                 ThrowUnknowException(context);
             }
