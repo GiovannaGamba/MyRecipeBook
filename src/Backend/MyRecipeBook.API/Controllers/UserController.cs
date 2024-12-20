@@ -5,7 +5,7 @@ using MyRecipeBook.Communication.Responses;
 
 namespace MyRecipeBook.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
