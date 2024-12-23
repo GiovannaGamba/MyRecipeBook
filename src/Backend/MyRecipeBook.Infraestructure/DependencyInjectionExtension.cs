@@ -6,6 +6,7 @@ using MyRecipeBook.Domain.Repositories;
 using MyRecipeBook.Domain.Repositories.User;
 using MyRecipeBook.Infraestructure.DataAccess;
 using MyRecipeBook.Infraestructure.DataAccess.Repositories;
+using MyRecipeBook.Infraestructure.Extensions;
 using System.Reflection;
 
 namespace MyRecipeBook.Infraestructure
@@ -14,9 +15,13 @@ namespace MyRecipeBook.Infraestructure
     {
         public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+            AddRepositories(services);
+
+            if (configuration.IsUnitTestEnviroment())
+                return;
+
             AddDbContext(services, configuration);
             AddFluentMigrator_MySql(services, configuration);
-            AddRepositories(services);
         }
 
         private static void AddDbContext(IServiceCollection services, IConfiguration configuration)
