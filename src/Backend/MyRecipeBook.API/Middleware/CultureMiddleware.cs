@@ -21,10 +21,10 @@ namespace MyRecipeBook.API.Middleware
 
             var cultureInfo = new CultureInfo("en");
 
-            if (string.IsNullOrWhiteSpace(requestedCulture).IsFalse()
+            if (requestedCulture.NotEmpty()
                 && supportedLanguages.Exists(c => c.Name.Equals(requestedCulture)))
             {
-                cultureInfo = new CultureInfo(requestedCulture!);
+                cultureInfo = new CultureInfo(requestedCulture);
             }
 
             CultureInfo.CurrentCulture = cultureInfo;
