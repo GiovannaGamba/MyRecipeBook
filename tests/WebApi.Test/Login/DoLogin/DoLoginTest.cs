@@ -10,20 +10,16 @@ using System.Globalization;
 
 namespace WebApi.Test.Login.DoLogin
 {
-    public class DoLoginTest : IClassFixture<CustomWebApplicationFactory>
+    public class DoLoginTest : MyRecipeBookClassFixture
     {
         private readonly string method = "login";
-
-        private readonly HttpClient _httpClient;
 
         private readonly string _email;
         private readonly string _password;
         private readonly string _name;
 
-        public DoLoginTest(CustomWebApplicationFactory factory)
+        public DoLoginTest(CustomWebApplicationFactory factory) : base(factory) 
         {
-            _httpClient = factory.CreateClient();
-
             _email = factory.GetEmail();
             _password = factory.GetPassword();
             _name = factory.GetName();
@@ -38,7 +34,7 @@ namespace WebApi.Test.Login.DoLogin
                 Password = _password
             };
 
-            var response = await _httpClient.PostAsJsonAsync(method, request);
+            var response = await DoPost(method, request);
 
             response.StatusCode.Should().Be(HttpStatusCode.OK);
 
@@ -55,12 +51,7 @@ namespace WebApi.Test.Login.DoLogin
         {
             var request = RequestLoginJsonBuilder.Build();
 
-            if (_httpClient.DefaultRequestHeaders.Contains("Aceppt-Language"))
-                _httpClient.DefaultRequestHeaders.Remove("Aceppt-Language");
-
-            _httpClient.DefaultRequestHeaders.Add("Accept-Language", culture);
-
-            var response = await _httpClient.PostAsJsonAsync(method, request);
+            var response = await DoPost(method, request, culture);
 
             response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
 
