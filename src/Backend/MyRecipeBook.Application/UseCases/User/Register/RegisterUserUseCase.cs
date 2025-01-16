@@ -5,6 +5,7 @@ using MyRecipeBook.Communication.Responses;
 using MyRecipeBook.Domain.Extensions;
 using MyRecipeBook.Domain.Repositories;
 using MyRecipeBook.Domain.Repositories.User;
+using MyRecipeBook.Domain.Security.Tokens;
 using MyRecipeBook.Exceptions;
 using MyRecipeBook.Exceptions.ExceptionsBase;
 
@@ -16,12 +17,14 @@ namespace MyRecipeBook.Application.UseCases.User.Register
         private readonly IUserReadOnlyRepository _readOnlyRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly IAcessTokenGenerator _acessTokenGenerator;
         private readonly PasswordEncripter _passwordEncripter;
 
         public RegisterUserUseCase(
             IUserWriteOnlyRepository writeOnlyRepository,
             IUserReadOnlyRepository readOnlyRepository,
             IUnitOfWork unitOfWork,
+            IAcessTokenGenerator acessTokenGenerator,
             IMapper mapper,
             PasswordEncripter passwordEncripter
             )
@@ -29,6 +32,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
             _writeOnlyRepository = writeOnlyRepository;
             _readOnlyRepository = readOnlyRepository;
             _unitOfWork = unitOfWork;
+            _acessTokenGenerator = acessTokenGenerator;
             _mapper = mapper;
             _passwordEncripter = passwordEncripter;
         }
@@ -40,6 +44,7 @@ namespace MyRecipeBook.Application.UseCases.User.Register
             var user = _mapper.Map<Domain.Entities.User>(request);
 
             user.Password = _passwordEncripter.Encrypt(request.Password);
+            user.UserIdentifier = Guid.NewGuid();
 
             await _writeOnlyRepository.Add(user);
 
@@ -48,6 +53,10 @@ namespace MyRecipeBook.Application.UseCases.User.Register
             return new ResponseRegisteredUserJson
             {
                 Name = user.Name,
+                Tokens = new ResponseTokenJson
+                {
+                    AcessToken = _acessTokenGenerator.Generate(user.UserIdentifier)
+                }
             };
         }
 
