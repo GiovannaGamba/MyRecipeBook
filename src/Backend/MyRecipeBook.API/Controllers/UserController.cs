@@ -16,7 +16,6 @@ namespace MyRecipeBook.API.Controllers
             var result = await useCase.Execute(request);
 
             return Created(string.Empty, result);
-
         }
     }
 }

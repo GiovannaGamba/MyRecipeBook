@@ -10,10 +10,10 @@ namespace MyRecipeBook.API.Converters
         {
             var value = reader.GetString()?.Trim();
 
-            if(value is null) 
+            if (value is null)
                 return null;
 
-            return RemoveExtraWhiteSpace().Replace(value, " ");            
+            return RemoveExtraWhiteSpace().Replace(value, " ");
         }
 
         public override void Write(Utf8JsonWriter writer, string value, JsonSerializerOptions options) => writer.WriteStringValue(value);

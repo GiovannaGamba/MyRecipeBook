@@ -11,6 +11,6 @@ namespace CommonTestUtilities.Repositories
 
             return mock.Object;
         }
-    
+
     }
 }

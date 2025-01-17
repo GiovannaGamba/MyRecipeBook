@@ -12,7 +12,7 @@ namespace MyRecipeBook.API.Middleware
             _next = next;
         }
 
-        
+
         public async Task Invoke(HttpContext context)
         {
             var supportedLanguages = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();

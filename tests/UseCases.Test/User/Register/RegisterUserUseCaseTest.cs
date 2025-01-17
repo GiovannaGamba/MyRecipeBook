@@ -22,7 +22,7 @@ namespace UseCases.Test.User.Register
             var result = await useCase.Execute(request);
 
             result.Should().NotBeNull();
-            result.Name.Should().Be(request.Name);  
+            result.Name.Should().Be(request.Name);
         }
 
         [Fact]
@@ -42,7 +42,7 @@ namespace UseCases.Test.User.Register
         public async Task Error_Name_Empty()
         {
             var request = RequestRegisterUserJsonBuilder.Build();
-            request.Name = string.Empty;    
+            request.Name = string.Empty;
 
             var useCase = CreateUseCase();
 

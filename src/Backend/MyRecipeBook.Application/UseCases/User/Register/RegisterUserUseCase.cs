@@ -50,14 +50,22 @@ namespace MyRecipeBook.Application.UseCases.User.Register
 
             await _unitOfWork.Commit();
 
-            return new ResponseRegisteredUserJson
+            try
             {
-                Name = user.Name,
-                Tokens = new ResponseTokenJson
+                return new ResponseRegisteredUserJson
                 {
-                    AcessToken = _acessTokenGenerator.Generate(user.UserIdentifier)
-                }
-            };
+                    Name = user.Name,
+                    Tokens = new ResponseTokenJson
+                    {
+                        AcessToken = _acessTokenGenerator.Generate(user.UserIdentifier)
+                    }
+                };
+            }
+            catch (Exception ex)
+            {
+                string message = ex.Message;
+                throw new Exception(message, ex);
+            }
         }
 
         private async Task Validate(RequestRegisterUserJson request)

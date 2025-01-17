@@ -5,7 +5,6 @@ using CommonTestUtilities.Requests;
 using FluentAssertions;
 using MyRecipeBook.Application.UseCases.Login.DoLogin;
 using MyRecipeBook.Communication.Requests;
-using MyRecipeBook.Domain.Entities;
 using MyRecipeBook.Exceptions;
 using MyRecipeBook.Exceptions.ExceptionsBase;
 
@@ -31,7 +30,7 @@ namespace UseCases.Test.Login.DoLogin
         }
 
         [Fact]
-        public async Task Error_Valid_User()            
+        public async Task Error_Valid_User()
         {
             var request = RequestLoginJsonBuilder.Build();
 

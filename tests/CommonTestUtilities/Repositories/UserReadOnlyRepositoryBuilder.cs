@@ -20,6 +20,6 @@ namespace CommonTestUtilities.Repositories
         }
 
         public IUserReadOnlyRepository Build() => _repository.Object;
-        
+
     }
 }

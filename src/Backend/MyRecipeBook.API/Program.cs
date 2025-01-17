@@ -41,7 +41,7 @@ app.Run();
 
 void MigrateDataBase()
 {
-    if(builder.Configuration.IsUnitTestEnviroment())
+    if (builder.Configuration.IsUnitTestEnviroment())
         return;
 
     var connectionString = builder.Configuration.ConnectionString();

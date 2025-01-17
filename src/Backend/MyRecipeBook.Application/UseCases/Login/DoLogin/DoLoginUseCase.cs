@@ -25,7 +25,7 @@ namespace MyRecipeBook.Application.UseCases.Login.DoLogin
 
         public async Task<ResponseRegisteredUserJson> Execute(RequestLoginJson request)
         {
-            var encriptedPassword =  _passwordEncripter.Encrypt(request.Password);
+            var encriptedPassword = _passwordEncripter.Encrypt(request.Password);
 
             var user = await _repository.GetByEmailAndPassword(request.Email, encriptedPassword) ?? throw new InvalidLoginException();
 

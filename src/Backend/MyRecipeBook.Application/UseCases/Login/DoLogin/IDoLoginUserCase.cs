@@ -5,6 +5,6 @@ namespace MyRecipeBook.Application.UseCases.Login.DoLogin
 {
     public interface IDoLoginUserCase
     {
-        public Task<ResponseRegisteredUserJson> Execute(RequestLoginJson request);  
+        public Task<ResponseRegisteredUserJson> Execute(RequestLoginJson request);
     }
 }
