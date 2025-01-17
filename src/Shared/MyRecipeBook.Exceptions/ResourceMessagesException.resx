@@ -132,10 +132,16 @@
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>The name connot be empty.</value>
   </data>
+  <data name="NO_TOKEN" xml:space="preserve">
+    <value>The Token cannot be empty.</value>
+  </data>
   <data name="PASSWORD_EMPTY" xml:space="preserve">
     <value>The password cannot be empty.</value>
   </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Internal Server Error.</value>
+  </data>
+  <data name="USER_WITHOUT_PERMISSION_ACCESS_RESOUCE" xml:space="preserve">
+    <value>User does not have access permission.</value>
   </data>
 </root>

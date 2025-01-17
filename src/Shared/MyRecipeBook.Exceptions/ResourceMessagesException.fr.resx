@@ -132,10 +132,16 @@
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>Le nom ne peut pas être vide.</value>
   </data>
+  <data name="NO_TOKEN" xml:space="preserve">
+    <value>Le Token ne peut pas être vide.</value>
+  </data>
   <data name="PASSWORD_EMPTY" xml:space="preserve">
     <value>Le mot de passe ne peut pas être vide.</value>
   </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Erreur interne du serveur.</value>
+  </data>
+  <data name="USER_WITHOUT_PERMISSION_ACCESS_RESOUCE" xml:space="preserve">
+    <value>L'utilisateur n'a pas d'autorisation d'accès.</value>
   </data>
 </root>
