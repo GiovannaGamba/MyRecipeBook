@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MyRecipeBook.Infraestructure.Security.Tokens.Access.Generator
 {
-    internal class JwtTokenGenerator : IAcessTokenGenerator
+    public class JwtTokenGenerator : IAcessTokenGenerator
     {
         private readonly uint _expirationTimeMinutes;
         private readonly string _signingKey;

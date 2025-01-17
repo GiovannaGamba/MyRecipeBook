@@ -24,6 +24,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRecipeBook.Exceptions", "src\Shared\MyRecipeBook.Exceptions\MyRecipeBook.Exceptions.csproj", "{4D5B29F0-E652-4715-A81D-239099BCD172}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestUtilities", "tests\CommonTestUtilities\CommonTestUtilities.csproj", "{B1F69372-E11E-42AC-A9ED-944CFFFDE4DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D9370B2B-B94A-4492-9A11-7CE88CF0C099} = {D9370B2B-B94A-4492-9A11-7CE88CF0C099}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validator.Test", "tests\Validator.Test\Validator.Test.csproj", "{AA96EA49-4F5C-4755-9F10-1494CD6A6DE8}"
 	ProjectSection(ProjectDependencies) = postProject
