@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyRecipeBook.API.Attributes;
+using MyRecipeBook.Application.UseCases.User.Profile;
 using MyRecipeBook.Application.UseCases.User.Register;
 using MyRecipeBook.Communication.Requests;
 using MyRecipeBook.Communication.Responses;
 
 namespace MyRecipeBook.API.Controllers
 {
-    [AuthenticatedUser]
-    public class UserController : MyRecipeBookBaseController
+        public class UserController : MyRecipeBookBaseController
     {
         [HttpPost]
         [ProducesResponseType(typeof(ResponseRegisteredUserJson), StatusCodes.Status201Created)]
@@ -18,6 +18,16 @@ namespace MyRecipeBook.API.Controllers
             var result = await useCase.Execute(request);
 
             return Created(string.Empty, result);
+        }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(ResponseUserProfileJson), StatusCodes.Status200OK)]
+        [AuthenticatedUser]
+        public async Task<IActionResult> GetUserProfile([FromServices] IGetUserProfileUseCase useCase)
+        {
+            var result = await useCase.Execute();
+
+            return Ok(result);
         }
     }
 }
