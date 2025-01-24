@@ -138,6 +138,9 @@
   <data name="PASSWORD_EMPTY" xml:space="preserve">
     <value>Le mot de passe ne peut pas être vide.</value>
   </data>
+  <data name="PASSWORD_INVALID" xml:space="preserve">
+    <value>Le mot doit être valide.</value>
+  </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Erreur interne du serveur.</value>
   </data>

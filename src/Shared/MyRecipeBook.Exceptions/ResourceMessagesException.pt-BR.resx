@@ -138,6 +138,9 @@
   <data name="PASSWORD_EMPTY" xml:space="preserve">
     <value>A senha não pode estar vazia.</value>
   </data>
+  <data name="PASSWORD_INVALID" xml:space="preserve">
+    <value>A senha precisa ser valida.</value>
+  </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Erro interno no servidor.</value>
   </data>
