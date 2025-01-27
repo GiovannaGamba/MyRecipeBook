@@ -5,7 +5,7 @@ namespace MyRecipeBook.Infraestructure.Security.Tokens.Access
 {
     public abstract class JwtTokenHandler
     {
-        protected SymmetricSecurityKey SecurityKey(string _signingKey)
+        protected static SymmetricSecurityKey SecurityKey(string _signingKey)
         {
             var bytes = Encoding.UTF8.GetBytes(_signingKey);
 
