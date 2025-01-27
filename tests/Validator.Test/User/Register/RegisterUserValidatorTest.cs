@@ -68,7 +68,6 @@ namespace Validator.Test.User.Register
         }
 
         [Theory]
-        [InlineData(0)]
         [InlineData(1)]
         [InlineData(2)]
         [InlineData(3)]
@@ -79,6 +78,22 @@ namespace Validator.Test.User.Register
             var validator = new RegisterUserValidator();
 
             var request = RequestRegisterUserJsonBuilder.Build(passwordLength);
+
+            var result = validator.Validate(request);
+
+            result.IsValid.Should().BeFalse();
+
+            result.Errors.Should().ContainSingle()
+                .And.Contain(e => e.ErrorMessage.Equals(ResourceMessagesException.PASSWORD_INVALID));
+        }
+
+        [Fact]
+        public void Error_Password_Empty()
+        {
+            var validator = new RegisterUserValidator();
+
+            var request = RequestRegisterUserJsonBuilder.Build();
+            request.Password = string.Empty;
 
             var result = validator.Validate(request);
 
