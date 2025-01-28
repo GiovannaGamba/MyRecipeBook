@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="COOKING_TIME_NOT_SUPPORTED" xml:space="preserve">
+    <value>Tempo de cozimento não suportado.</value>
+  </data>
+  <data name="DIFFICULTY_LEVEL_NOT_SUPPORTED" xml:space="preserve">
+    <value>Nível de dificuldade não suportado.</value>
+  </data>
   <data name="EMAIL_ALREADY_REGISTER" xml:space="preserve">
     <value>E-Mail já registrado.</value>
   </data>
@@ -143,6 +149,9 @@
   </data>
   <data name="PASSWORD_INVALID" xml:space="preserve">
     <value>A senha precisa ser valida.</value>
+  </data>
+  <data name="RECIPE_TITLE_EMPTY" xml:space="preserve">
+    <value>O título da receita não pode ser vazio.</value>
   </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Erro interno no servidor.</value>
