@@ -117,12 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AT_LEAST_ONE_INGREDIENT" xml:space="preserve">
+    <value>There must be at least one ingredient.</value>
+  </data>
+  <data name="AT_LEAST_ONE_INSTRUCTION" xml:space="preserve">
+    <value>There must be at least one instruction.</value>
+  </data>
   <data name="COOKING_TIME_NOT_SUPPORTED" xml:space="preserve">
     <value>
 Cooking time not supported.</value>
   </data>
   <data name="DIFFICULTY_LEVEL_NOT_SUPPORTED" xml:space="preserve">
     <value>Difficulty level not supported.</value>
+  </data>
+  <data name="DISH_TYPE_NOT_SUPPORTED" xml:space="preserve">
+    <value>Dish Typel not supported.</value>
   </data>
   <data name="EMAIL_ALREADY_REGISTER" xml:space="preserve">
     <value>Email already registered.</value>
@@ -136,8 +145,20 @@ Cooking time not supported.</value>
   <data name="EMAIL_OR_PASSWORD_INVALID" xml:space="preserve">
     <value>E-mail or password invalid.</value>
   </data>
+  <data name="INGREDIENT_EMPTY" xml:space="preserve">
+    <value>Ingredient cannot be empty.</value>
+  </data>
+  <data name="INSTRUCTION_EMPTY" xml:space="preserve">
+    <value>The instruction cannot be empty.</value>
+  </data>
+  <data name="INSTRUCTION_EXCEEDS_LIMIT_CHARACTERS" xml:space="preserve">
+    <value>Statement exceeded character limit.</value>
+  </data>
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>The name connot be empty.</value>
+  </data>
+  <data name="NON_NEGATIVE_INSTRUCTION_STEP" xml:space="preserve">
+    <value>Instruction step cannot be empty.</value>
   </data>
   <data name="NO_TOKEN" xml:space="preserve">
     <value>The Token cannot be empty.</value>
@@ -153,6 +174,9 @@ Cooking time not supported.</value>
   </data>
   <data name="RECIPE_TITLE_EMPTY" xml:space="preserve">
     <value>The recipe title cannot be empty.</value>
+  </data>
+  <data name="TWO_OR_MORE_INSTRUCTION_SAME_ORDER" xml:space="preserve">
+    <value>There cannot be two or more instructions for the same step.</value>
   </data>
   <data name="UNKNOW_ERROR" xml:space="preserve">
     <value>Internal Server Error.</value>
