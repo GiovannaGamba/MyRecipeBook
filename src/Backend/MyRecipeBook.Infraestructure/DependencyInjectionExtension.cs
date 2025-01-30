@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyRecipeBook.Domain.Repositories;
+using MyRecipeBook.Domain.Repositories.Recipe;
 using MyRecipeBook.Domain.Repositories.User;
 using MyRecipeBook.Domain.Security.Cryptography;
 using MyRecipeBook.Domain.Security.Tokens;
@@ -14,6 +15,7 @@ using MyRecipeBook.Infraestructure.Security.Cryptography;
 using MyRecipeBook.Infraestructure.Security.Tokens.Access.Generator;
 using MyRecipeBook.Infraestructure.Security.Tokens.Access.Validator;
 using MyRecipeBook.Infraestructure.Services;
+using MyRecipeBook.Infrastructure.DataAccess.Repositories;
 using System.Reflection;
 
 namespace MyRecipeBook.Infraestructure
@@ -52,6 +54,7 @@ namespace MyRecipeBook.Infraestructure
             services.AddScoped<IUserWriteOnlyRepository, UserRepository>();
             services.AddScoped<IUserReadOnlyRepository, UserRepository>();
             services.AddScoped<IUserUpdateOnlyRepository, UserRepository>();
+            services.AddScoped<IRecipeWriteOnlyRepository, RecipeRepository>();
 
         }
 
