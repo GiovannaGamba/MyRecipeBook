@@ -42,12 +42,12 @@ namespace WebApi.Test.User.ChangePassword
                 Password = _password
             };
 
-            response = await DoPost("login", loginRequest);
+            response = await DoPost(method: "login", request: loginRequest);
             response.StatusCode.Should().Be(HttpStatusCode.Unauthorized);
 
             loginRequest.Password = request.NewPassword;
 
-            response = await DoPost("login", loginRequest);
+            response = await DoPost(method: "login", request: loginRequest);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
