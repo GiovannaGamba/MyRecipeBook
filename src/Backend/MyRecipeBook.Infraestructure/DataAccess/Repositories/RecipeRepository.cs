@@ -10,6 +10,11 @@ public sealed class RecipeRepository : IRecipeWriteOnlyRepository, IRecipeReadOn
     private readonly MyRecipeBookDbContext _dbContext;
     public RecipeRepository(MyRecipeBookDbContext dbContext) => _dbContext = dbContext;
     public async Task Add(Recipe recipe) => await _dbContext.Recipes.AddAsync(recipe);
+    public async Task Delete(long recipeId)
+    {
+        var recipe = await _dbContext.Recipes.FindAsync(recipeId);
+        _dbContext.Recipes.Remove(recipe!);
+    }
 
     public async Task<IList<Recipe>> Filter(User user, FilterRecipesDto filters)
     {
